@@ -1,0 +1,149 @@
+body {
+    font-family: sans-serif, Arial, Helvetica;
+    background-color: rgb(19, 20, 23);
+    color: white;
+}
+
+footer {
+    font-size: 130%;
+}
+
+a#skip-link {
+    position: fixed;    
+    top: -20px;
+    left: 10px;
+}
+
+a#skip-link:focus {
+    top: 10px;
+    background-color: yellow;
+}
+
+ul {
+    display: flex;
+    padding-left: 0px;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-size: 200%;
+    background-color: rgb(34, 34, 33);
+}
+
+li.active {
+    background-color: rgb(60, 60, 60);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+a.active {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+div.background-banner {
+    background-image: url("../images/catbanner.png");
+    background-size: 100%;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-position: center;
+    box-shadow: 10px 10px 20px grey;
+    border-radius: 10px;
+}
+
+div.main {
+    background-color: rgb(34, 36, 41);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+p {
+    text-align: center;
+}
+
+div.top {
+    margin-top: 50px;
+}
+
+div.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 30px;
+}
+
+div.grid img:nth-child(3n) {
+    border: 2px solid rgb(221, 221, 221);
+}
+
+div.grid img:nth-child(3n + 1) {
+    border: 2px solid rgb(2, 255, 23);
+}
+
+div.grid img:nth-child(3n + 2) {
+    border: 2px solid rgb(246, 255, 0);
+}
+
+div.grid img {
+    display: inline;
+    width: 100%;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+div.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 30px;
+    justify-content: space-evenly;
+}
+
+div.flex img {
+    display: inline-block;
+    opacity: .2;
+    border-radius: 4px;
+    padding: 5px;
+    transition: opacity 0.2s;
+}
+
+div.flex img:hover {
+    opacity: 1;
+    border: 2px solid rgb(236, 255, 88);
+}
+
+div.grid10 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+div.grid10 img {
+    width: 100%;
+}
+
+img.wrong:hover {
+    opacity: 0;
+}
+
+img.correct:hover {
+    content: url("../images/stare.gif");
+    opacity: 1;
+}
